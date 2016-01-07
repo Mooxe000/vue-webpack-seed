@@ -35,9 +35,6 @@ npm run dev
     * babel-runtime
   * vue-hot-reload-api
 
-<!-- * template-html-loader -->
-<!-- * html-webpack-plugin -->
-
 * coffee-script
 * coffee-loader
 
@@ -72,5 +69,7 @@ cnpm install --save-dev \
   jade jade-loader \
   stylus stylus-loader \
   cson json-loader \
-  file-loader url-loader
+  file-loader url-loader \
+  template-html-loader \
+  html-webpack-plugin
 ```

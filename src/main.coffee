@@ -1,5 +1,5 @@
 Vue = require 'vue'
-App = require './App'
+App = require './App/app'
 
 new Vue
   el: 'body'
