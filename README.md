@@ -53,25 +53,3 @@ npm run dev
 * url-loader
 
 <!-- * inject-loader -->
-
-``` bash
-cnpm install --save-dev \
-  webpack webpack-dev-server
-
-cnpm install --save-dev \
-  babel-loader babel-core \
-  babel-plugin-transform-runtime babel-preset-es2015 babel-runtime@^5.8.0
-
-cnpm install --save-dev \
-  vue-html-loader css-loader vue-style-loader \
-  vue-hot-reload-api vue-loader
-
-cnpm install --save-dev \
-  coffee-script coffee-loader \
-  jade jade-loader \
-  stylus stylus-loader \
-  cson json-loader \
-  file-loader url-loader \
-  template-html-loader \
-  html-webpack-plugin
-```
