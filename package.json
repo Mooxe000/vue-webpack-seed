@@ -2,9 +2,16 @@
   "name": "vue-webpack-seed",
   "description": "vue webpack seed",
   "author": ":FooTearth <footearth@gmail.com>",
-  "lisence": "MIT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/vue-webpack-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mooxe000/vue-webpack-seed/issues"
+  },
   "scripts": {
-    "dev": "webpack --config conf/webpack.dev.conf.coffee && webpack-dev-server --inline --hot --devtool eval --progress --colors --content-base dist --config conf/webpack.dev.conf.coffee"
+    "dev": "webpack-dev-server --inline --hot --content-base static --config conf/webpack.dev.conf.coffee"
   },
   "dependencies": {
     "vue": "^1.0.13"

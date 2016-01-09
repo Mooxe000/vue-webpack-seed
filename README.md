@@ -25,7 +25,6 @@ npm run dev
 * vue-loader
   * vue-html-loader
   * css-loader
-  <!-- * style-loader -->
   * vue-style-loader
   * \#babel\#
     * babel-loader
@@ -34,6 +33,9 @@ npm run dev
     * babel-preset-es2015
     * babel-runtime
   * vue-hot-reload-api
+
+* style-loader
+* extract-text-webpack-plugin
 
 * coffee-script
 * coffee-loader
