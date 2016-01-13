@@ -5,9 +5,9 @@ HtmlWebpackPlugin = require 'html-webpack-plugin'
 module.exports =
   entry:
     app: [
+      './src/main.coffee'
       'webpack-dev-server/client?http://0.0.0.0:8080'
       'webpack/hot/dev-server'
-      './src/main.coffee'
     ]
   output:
     path: path.resolve __dirname, '../dist/static'
@@ -42,12 +42,13 @@ module.exports =
       {
         test: /\.coffee$/
         loader: 'coffee-loader'
-      }
-      {
-        test: /\.js$/
-        loader: 'babel!eslint'
         exclude: /node_modules/
       }
+      # {
+      #   test: /\.js$/
+      #   loader: 'babel!eslint'
+      #   exclude: /node_modules/
+      # }
       # {
       #   test: /\.css$/
       #   loader: ExtractTextPlugin.extract 'style-loader', 'css-loader'

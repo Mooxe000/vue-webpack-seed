@@ -1,5 +1,13 @@
-Hello = require '../components/Hello/hello'
+CompA = require '../components/A/a.vue'
+CompB = require '../components/B/b.vue'
+Counter = require '../components/Counter/counter.vue'
 
 module.exports =
+
+  data: ->
+    msg: 'Hello from vue-loader!'
+
   components:
-    hello: Hello
+    CompA: CompA
+    CompB: CompB
+    Counter: Counter
