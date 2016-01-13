@@ -1,16 +1,25 @@
 path = require 'path'
 HtmlWebpackPlugin = require 'html-webpack-plugin'
+# ExtractTextPlugin = require 'extract-text-webpack-plugin'
 
 module.exports =
   entry: './src/main.coffee'
+  # 'webpack-dev-server/client?http://0.0.0.0:8080'
+  # 'webpack/hot/dev-server'
   output:
     path: path.join __dirname, './dist'
     publicPath: '/'
     filename: 'dist/build.js'
   plugins: [
     new HtmlWebpackPlugin
+      # filename: '../../index.html'
       template: path.join __dirname, '../src/index.jade'
+    # new ExtractTextPlugin 'styles.css'
   ]
+  # resolve:
+  #   extensions:
+  #     alias:
+  #     src:
   module:
     loaders: [
       {

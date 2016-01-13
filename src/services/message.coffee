@@ -1,3 +1,3 @@
 module.exports =
   getMessage: (id) ->
-    'Hello from Component ABC!'
+    'Hello from Component A!'
