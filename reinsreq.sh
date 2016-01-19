@@ -34,4 +34,5 @@ cnpm install --save-dev \
   gulp gulp-util run-sequence \
   # gulp-sequence
 
-cnpm install --save vue
+cnpm install --save \
+  vue vue-router

@@ -14,7 +14,8 @@
     "dev": "webpack-dev-server --inline --hot --content-base dist --config webpack/dev.conf.coffee"
   },
   "dependencies": {
-    "vue": "^1.0.15"
+    "vue": "^1.0.15",
+    "vue-router": "^0.7.9"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
