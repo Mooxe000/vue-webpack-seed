@@ -6,5 +6,5 @@ module.exports = ->
 
   # echo 'Hello World!!!'
 
-  # runSequence 'startDevServer', 'watch'
-  runSequence 'startDevServer'
+  runSequence 'startDevServer', 'watch'
+  # runSequence 'startDevServer'

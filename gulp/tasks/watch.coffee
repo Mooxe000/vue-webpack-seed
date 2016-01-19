@@ -1,6 +1,6 @@
 gulp = require 'gulp'
+reload = require '../module/reload'
 
 module.exports = ->
 
-  gulp.watch 'src/**/*', ['stopDevServer', 'startDevServer']
-  # gulp.watch 'src/**/*', ['stopDevServer']
+  gulp.watch 'src/**/*', reload

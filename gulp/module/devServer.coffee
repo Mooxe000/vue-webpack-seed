@@ -10,6 +10,15 @@ class devServer
     myConfig = _.clone webpackConfig
     myConfig.devtool = 'eval'
     myConfig.debug = true
+
+    # TODO map->map array->map
+    if _.isString myConfig.entry
+      myConfig.entry = [
+        myConfig.entry
+        'webpack-dev-server/client?http://0.0.0.0:8080'
+        'webpack/hot/dev-server'
+      ]
+
     myConfig.plugins.push(
       new webpack.optimize.OccurenceOrderPlugin()
       new webpack.HotModuleReplacementPlugin()
@@ -41,10 +50,6 @@ class devServer
       # throw new gutil.PluginError 'webpack-dev-server', err if err
   		# gutil.log '[webpack-dev-server]'
       # , 'http://0.0.0.0:8080/webpack-dev-server/index.html'
-    @
-
-  stop: ->
-    @server.close()
     @
 
 module.exports = ->

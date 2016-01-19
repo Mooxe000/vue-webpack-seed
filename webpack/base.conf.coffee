@@ -4,8 +4,6 @@ HtmlWebpackPlugin = require 'html-webpack-plugin'
 
 module.exports =
   entry: './src/main.coffee'
-  # 'webpack-dev-server/client?http://0.0.0.0:8080'
-  # 'webpack/hot/dev-server'
   output:
     path: path.join __dirname, './dist'
     publicPath: '/'

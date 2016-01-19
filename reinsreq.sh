@@ -31,7 +31,7 @@ cnpm install --save-dev \
 cnpm install --save-dev \
   lodash \
   ddeyes build-module-task \
-  run-sequence gulp-util
+  gulp gulp-util run-sequence \
   # gulp-sequence
 
 cnpm install --save vue

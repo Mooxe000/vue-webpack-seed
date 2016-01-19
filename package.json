@@ -14,7 +14,7 @@
     "dev": "webpack-dev-server --inline --hot --content-base dist --config webpack/dev.conf.coffee"
   },
   "dependencies": {
-    "vue": "^1.0.14"
+    "vue": "^1.0.15"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
@@ -32,7 +32,7 @@
     "file-loader": "^0.8.5",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.7",
-    "html-webpack-plugin": "^2.6.2",
+    "html-webpack-plugin": "^2.6.3",
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
     "json-loader": "^0.5.4",
