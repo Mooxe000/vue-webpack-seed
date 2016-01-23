@@ -1,6 +1,6 @@
-CompA = require '../components/A/a.vue'
-CompB = require '../components/B/b.vue'
-Counter = require '../components/Counter/counter.vue'
+CompA = require '../components/A/main.vue'
+CompB = require '../components/B/main.vue'
+Counter = require '../components/Counter/main.vue'
 
 module.exports =
 

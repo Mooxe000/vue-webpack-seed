@@ -1,6 +1,6 @@
 Vue = require 'vue'
 VueRouter = require 'vue-router'
-App = require './App/app.vue'
+App = require './App/main.vue'
 
 app = Vue.extend {}
 

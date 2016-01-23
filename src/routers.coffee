@@ -1,8 +1,10 @@
 module.exports = (router) ->
+
   router.map
     '/':
       name: 'home'
-      component: require './App/app.vue'
+      component: require './App/main.vue'
 
-    '*': # 404
-      component: require './App/app.vue'
+  router.redirect
+
+    '*': '/'
